@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-06-05T05:34:52.414-07:00"
+        cq:lastModified="{Date}2020-08-19T09:58:19.080+02:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-angular/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -18,23 +18,50 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <text
-                    jcr:created="{Date}2020-06-05T05:33:15.525-07:00"
+                <text/>
+                <image/>
+                <tabs
+                    jcr:created="{Date}2020-08-19T09:29:30.289+02:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-06-05T05:33:37.798-07:00"
+                    jcr:lastModified="{Date}2020-08-19T09:29:30.289+02:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd-spa-angular/components/text"
-                    text="&lt;h1>&lt;u>Page 1&lt;/u>&lt;/h1>&#xd;&#xa;"
-                    textIsRich="true"/>
-                <image
-                    jcr:created="{Date}2020-06-05T05:34:52.409-07:00"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-06-05T05:34:52.409-07:00"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="wknd-spa-angular/components/image"
-                    fileReference="/content/dam/wknd/en/activities/climbing/sport-climbing.jpg"/>
+                    sling:resourceType="wknd-spa-angular/components/tabs">
+                    <item_1
+                        cq:panelTitle="tab1"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="wcm/foundation/components/responsivegrid"
+                        layout="responsiveGrid">
+                        <image
+                            jcr:created="{Date}2020-06-05T05:34:52.409-07:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2020-08-19T09:48:20.775+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wknd-spa-angular/components/image"
+                            fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/northern-lights.jpg"/>
+                    </item_1>
+                    <item_2
+                        cq:panelTitle="tab2"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 2"
+                        sling:resourceType="wcm/foundation/components/responsivegrid"
+                        layout="responsiveGrid">
+                        <image
+                            jcr:created="{Date}2020-06-05T05:34:52.409-07:00"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2020-08-19T09:58:19.076+02:00"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wknd-spa-angular/components/image"
+                            altValueFromDAM="false"
+                            displayPopupTitle="false"
+                            fileReference="/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/surfer-wave-01.jpg"
+                            isDecorative="false"
+                            titleValueFromDAM="false"/>
+                    </item_2>
+                </tabs>
             </responsivegrid>
         </root>
     </jcr:content>

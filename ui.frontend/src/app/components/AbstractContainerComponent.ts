@@ -2,8 +2,8 @@ import {ComponentMapping, AEMAllowedComponentsContainerComponent, Utils} from "@
 import {Component, HostBinding, Injectable, Input} from "@angular/core";
 import {ContainerModel, ContainerProperties, Model} from "./common";
 
-export function ContainerIsEmptyFn(props:ContainerModel){
-    return props[":itemsOrder"] == null || props[":itemsOrder"].length === 0;
+export function ContainerIsEmptyFn(props:ContainerProperties){
+    return props.cqItemsOrder == null || props.cqItemsOrder.length === 0;
 }
 
 @Component({
